@@ -27,3 +27,13 @@ float calcular(float radio, float altura, bool esCilindro) {
 float area(float radio, char figura) {
     return 4 * M_PI * pow(radio, 2);
 }
+
+// Función sobrecargada para calcular el área superficial de un prisma rectangular
+float area(float largo, float ancho, float alto) {
+    return 2 * (largo * ancho + largo * alto + ancho * alto);
+}
+
+// Función sobrecargada para calcular el área superficial de un cilindro
+float area(float radio, float altura, bool esCilindro) {
+    return 2 * M_PI * radio * (radio + altura);
+}
