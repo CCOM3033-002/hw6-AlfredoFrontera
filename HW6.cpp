@@ -13,3 +13,17 @@ float calcular(float radio, char figura) {
     return (4.0 / 3.0) * M_PI * pow(radio, 3);
 }
 
+// Función sobrecargada para calcular el volumen de un prisma rectangular
+float calcular(float largo, float ancho, float alto) {
+    return largo * ancho * alto;
+}
+
+// Función sobrecargada para calcular el volumen de un cilindro
+float calcular(float radio, float altura, bool esCilindro) {
+    return M_PI * pow(radio, 2) * altura;
+}
+
+// Función sobrecargada para calcular el área superficial de una esfera
+float area(float radio, char figura) {
+    return 4 * M_PI * pow(radio, 2);
+}
